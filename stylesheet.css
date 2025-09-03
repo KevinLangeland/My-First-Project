@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("/Image/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    line-height: 1.6;
+    color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 1.6;
+    color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    background: inherit;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.left-text {
+    font-weight: bold;
+    color: #04AA6D;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.right-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-links a.active {
+    background-color: #04AA6D;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right-links a:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
